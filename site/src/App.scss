@@ -1,0 +1,26 @@
+@import "styles/colors.scss";
+
+@font-face {
+  font-family: "Apfel Grotesk";
+  src: url("/assets/fonts/apfelGrotezk/ApfelGrotezk-Regular.woff2")
+    format("woff2");
+}
+
+body {
+  font-size: 16px;
+  font-family: "Apfel Grotesk";
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-95deg, #f4f5f4, #e4e1e1);
+  font-size: 16px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: grid;
+  place-items: center center;
+}
+
+p {
+  font-size: 2em;
+  color: $saffron;
+}

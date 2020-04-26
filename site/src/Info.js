@@ -1,11 +1,18 @@
 import React from "react";
-import logo from "./logo.svg";
+import text from "./text.js";
 import "./App.scss";
 
 function Info() {
   return (
     <div className="Info">
-      <h2>INFO</h2>
+      <p className="about">
+        <p>{text.about_1}</p>
+        <p>{text.about_2}</p>
+        <p>{text.about_3}</p>
+        <p>{text.about_4}</p>
+      </p>
+      <p className="text-saffron">{text.contact_email}</p>
+      <p className="text-saffron">{text.contact_phone}</p>
     </div>
   );
 }

@@ -1,0 +1,27 @@
+@import "styles/colors.scss";
+
+.mov {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid $saffron;
+  opacity: 0.8;
+  transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  pointer-events: none;
+  z-index: 999;
+}
+
+.mov.active {
+  border: 1px solid blue;
+}
+
+.mov.cursor-pointer {
+  opacity: 1;
+  background: red;
+  transform: scale(0.7);
+}
+
+.cursor-up {
+  transform: scale(1);
+}

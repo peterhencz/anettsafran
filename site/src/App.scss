@@ -1,8 +1,14 @@
+@import "styles/cursor.scss";
 @import "styles/colors.scss";
 
 @font-face {
   font-family: "Apfel Grotesk";
   src: url("./assets/apfelGrotezk/ApfelGrotezk-Regular.woff2") format("woff2");
+}
+
+html,
+html * {
+  cursor: none;
 }
 
 body {
@@ -23,6 +29,9 @@ p {
   font-family: "Apfel Grotesk";
   font-size: 1em;
   color: #666;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 1.5em;
 }
 
 #root,
@@ -32,10 +41,14 @@ p {
 }
 
 .Home,
-.Work,
-.Info {
+.Work {
   display: grid;
   place-items: center;
+}
+
+.Info {
+  width: 70%;
+  padding: 10%;
 }
 
 .link {
@@ -45,6 +58,12 @@ p {
   font-size: 1em;
 }
 
+.text-saffron {
+  color: $saffron;
+}
+.about {
+  padding: 1em 0;
+}
 .navigation {
   position: absolute;
   top: 0;
@@ -59,3 +78,4 @@ p {
 img {
   max-width: 400px;
 }
+

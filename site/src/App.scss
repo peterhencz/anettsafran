@@ -40,10 +40,15 @@ p {
   width: 100%;
 }
 
-.Home,
-.Work {
+.Home {
   display: grid;
   place-items: center;
+}
+
+.Work {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .Info {
@@ -56,6 +61,14 @@ p {
   text-decoration: none;
   color: #333;
   font-size: 1em;
+}
+
+.link:hover {
+  margin: 1em 2em;
+  text-decoration: none;
+  color: $saffron;
+  font-size: 1em;
+  transition: 200ms;
 }
 
 .text-saffron {
@@ -76,6 +89,6 @@ p {
 }
 
 img {
-  max-width: 400px;
+  max-width: 20vw;
+  margin: 2em;
 }
-

@@ -2,12 +2,12 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.scss";
 
-import pic from "./assets/DSC_8711.jpg";
+import landing_photo from "./assets/photos/resin1.jpg";
 
 function Home() {
   return (
     <div className="Home">
-      <img src={pic}></img>
+      <img alt="landing photos" src={landing_photo}></img>
     </div>
   );
 }

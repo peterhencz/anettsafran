@@ -9,6 +9,13 @@ const text = {
     "She is available for commisions, collaborations and installations upon request.",
   contact_email: "info@anettsafran.com",
   contact_phone: "+36 20 425 8111",
+  resin: {
+    title: "Resin display pieces",
+    mod: "Experiment",
+    material: "mdf dust, resin",
+    size: "Various dimensions",
+    year: "2019",
+  },
 };
 
 export default text;

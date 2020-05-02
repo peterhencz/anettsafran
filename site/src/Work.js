@@ -6,7 +6,9 @@ import {
   Switch,
   Route,
   Link,
+  Redirect,
 } from "react-router-dom";
+import LazyLoad from "react-lazy-load";
 import Resin from "./projects/Resin";
 import Hurka from "./projects/Hurka";
 import Bauxit from "./projects/Bauxit";
@@ -21,13 +23,31 @@ function Work() {
     <div className="Work">
       <Router>
         <NavLink to="/resin">
-          <img alt="landing photos" src={resin1}></img>
+          <LazyLoad
+            width={"30vw"}
+            heigth={"auto"}
+            debounce={false}
+            offsetVertical={500}>
+            <img className="menu_photo" alt="resin" src={resin1}></img>
+          </LazyLoad>
         </NavLink>
         <Link to="/hurka">
-          <img alt="landing photos" src={hurka1}></img>
+          <LazyLoad
+            width={"30vw"}
+            heigth={"auto"}
+            debounce={false}
+            offsetVertical={500}>
+            <img className="menu_photo" alt="hurka" src={hurka1}></img>
+          </LazyLoad>
         </Link>
         <Link to="/bauxit">
-          <img alt="landing photos" src={bauxit1}></img>
+          <LazyLoad
+            width={"30vw"}
+            heigth={"auto"}
+            debounce={false}
+            offsetVertical={500}>
+            <img className="menu_photo" alt="bauxit" src={bauxit1}></img>
+          </LazyLoad>
         </Link>
         <Switch>
           <Route path="/resin">{Resin}</Route>

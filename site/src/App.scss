@@ -49,6 +49,7 @@ p {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  border: 1px solid blue;
 }
 
 .Info {
@@ -97,4 +98,13 @@ img.landing-photo {
 img.menu_photo {
   max-width: 20vw;
   margin: 2em;
+}
+
+.hide {
+  display: none;
+}
+
+.LazyLoad {
+  display: flex;
+  justify-content: center;
 }
